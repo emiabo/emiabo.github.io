@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Emi Aboudara -- designer -- @emi_abo
+
+# THANKS
+
+    HTML5 Boilerplate - for some files & inspiration
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Parcel, TailwindCSS
+
+Last updated 2022 Aug 11
