@@ -17,13 +17,13 @@
 </head>
 <body class="text-center bg-neutral-900 text-neutral-100 print:bg-white print:text-black">
     <header class="my-6 mx-auto max-w-xl flex flex-col gap-2">
-      <img class="w-1/2 rounded-3xl mx-auto shadow-lg print:hidden" src="img/avatar.png" alt="">
-      <h1 class="font-cursive print:font-serif print:capitalize text-5xl pt-1"><span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-rose-600 to-purple-800 print:text-black">emi aboudara</span></h1>
+      <img class="blur-[1px] hue-rotate-15 aspect-square object-cover w-1/2 rounded-3xl mx-auto shadow-lg print:hidden" src="img/avatar-real-2018.jpeg" alt="">
+      <h1 class="font-cursive print:font-serif print:capitalize text-5xl pt-1"><span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-rose-600 to-purple-800 print:text-black contrast-more:text-rose-500">emi aboudara</span></h1>
       <div class="flex flex-row items-center justify-center gap-4 print:hidden">
         <a href="https://twitter.com/emi_abo"><img class="h-12" src="img/twitter-white.svg" alt="Twitter"></a>
         <a href="https://github.com/emiabo"><img class="h-12" src="img/github-white.svg" alt="GitHub"></a>
       </div>
-      <p class="font-mono text-neutral-500">designer :: developer :: creator</p>
+      <p class="font-mono text-neutral-500 contrast-more:text-neutral-200">designer :: developer :: creator</p>
       <p class="hidden print:block">hello@emiabo.com</p>
     </header>
     <section class="bg-purple-800 print:bg-white print:shadow-none shadow-inner shadow-black/25 py-2">
@@ -40,26 +40,28 @@
             <p class="font-medium rounded-full bg-sky-500 py-1 px-3">College</p>
           </div>
         </div>
-        <div class="bg-neutral-100 flex flex-col rounded-xl bg-cover bg-center text-neutral-900 text-left px-2 py-1 shadow-lg" style="background-image:url('img/2M.gif')">
+        <div class="relative flex flex-col rounded-xl bg-cover bg-center bg-neutral-100 text-neutral-900 text-left px-2 py-1 shadow-lg overflow-hidden" style="background-image:url('img/2M.gif')">
+          <div class="hidden motion-reduce:block contrast-more:block bg-neutral-100 absolute inset-0"></div>
           <a class="group inline-flex items-baseline gap-2" href="https://emiabo.github.io/csci202-week6/">
-            <h2 class="text-2xl font-semibold text-neutral-100 mix-blend-difference">2M</h2>
+            <h2 class="text-2xl text-neutral-100 mix-blend-difference">2M</h2>
             <img class="invert opacity-0 transition group-hover:opacity-100 group-hover:mix-blend-difference h-5" src="img/link-black.svg" alt="">
           </a>
-          <p class="text-neutral-100 mix-blend-difference">A browser game about personal space.</p>
-          <div class="flex flex-row-reverse flex-wrap gap-x-2 mb-1 mt-auto text-neutral-100">
+          <p class="text-neutral-100 mix-blend-difference font-light tracking-wide">A browser game about personal space.</p>
+          <div class="flex flex-row-reverse flex-wrap gap-x-2 mb-1 mt-auto text-neutral-100 z-10">
             <p class="font-medium rounded-full bg-rose-600 py-1 px-3">p5.js</p>
             <p class="font-medium rounded-full bg-green-600 py-1 px-3">Game</p>
             <p class="font-medium rounded-full bg-sky-500 py-1 px-3">College</p>
           </div>
           
         </div>
-        <div class="flex flex-col rounded-xl bg-cover bg-center motion-reduce:bg-black bg-neutral-100 text-neutral-900 text-left px-2 py-1 shadow-lg" style="background-image:url('img/DailyGrind.gif')">
+        <div class="relative flex flex-col rounded-xl bg-cover bg-center motion-reduce:bg-black bg-neutral-100 text-neutral-900 text-left px-2 py-1 shadow-lg overflow-hidden" style="background-image:url('img/DailyGrind.gif')">
+          <div class="hidden motion-reduce:block contrast-more:block bg-neutral-100 absolute inset-0"></div>
           <a class="group inline-flex items-baseline gap-2" href="https://emiabo.github.io/csci202-week4/">
-            <h2 class="text-2xl font-semibold text-neutral-100 mix-blend-difference">Daily Grind</h2>
+            <h2 class="text-2xl text-neutral-100 mix-blend-difference">Daily Grind</h2>
             <img class="invert opacity-0 transition group-hover:opacity-100 group-hover:mix-blend-difference h-5" src="img/link-black.svg" alt="">
           </a>
-          <p class="text-neutral-100 mix-blend-difference">A game about work, in 2 acts.</p>
-          <div class="flex flex-row-reverse flex-wrap gap-x-2 mb-1 mt-auto text-neutral-100">
+          <p class="text-neutral-100 mix-blend-difference font-light tracking-wide">A game about work, in 2 acts.</p>
+          <div class="flex flex-row-reverse flex-wrap gap-x-2 mb-1 mt-auto text-neutral-100 z-10">
             <p class="font-medium rounded-full bg-rose-600 py-1 px-3">p5.js</p>
             <p class="font-medium rounded-full bg-green-600 py-1 px-3">Game</p>
             <p class="font-medium rounded-full bg-sky-500 py-1 px-3">College</p>
@@ -118,12 +120,13 @@
       </div>
     </section>
     <section class="m-2">
+      <h2 class="text-2xl font-semibold mb-2">Contact me</h2>
       <a class="print:hidden group max-w-xs mx-auto flex flex-row gap-2 justify-center items-center bg-gradient-to-r from-orange-500 via-rose-600 to-purple-800 transition hover:invert rounded-full shadow-lg text-xl font-medium py-1 px-3" href="mailto:hello@emiabo.com">
         <img class="h-4 invert" src="img/mail-white.svg" alt="">
-        Contact me
+        hello@emiabo.com
       </a>
     </section>
-    <footer class="text-neutral-500 m-2">
+    <footer class="text-neutral-500 contrast-more:text-neutral-200 m-2">
         <p class="print:hidden">&copy; 20XX Scylla Industries</p>
         <p class="hidden print:block text-xl">emiabo.com</p>
     </footer>
