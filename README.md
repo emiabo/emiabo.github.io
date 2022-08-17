@@ -1,4 +1,10 @@
 A portfolio/personal homepage using Tailwind.
 
 ## Start server
-`npx parcel src/index.html`
+`npm run start` or `npx parcel src/index.html`
+
+## Build site
+`npm run build`
+
+## Publish built site
+`npm run push-gh-pages`
