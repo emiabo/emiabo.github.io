@@ -1,19 +1,26 @@
 {
-  "name": "homepage",
+  "name": "index",
   "version": "1.0.0",
-  "description": "",
+  "description": "A personal homepage for Emi Aboudara",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./src/index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "keywords": [],
-  "author": "",
+  "author": "Emilia Aboudara",
   "license": "ISC",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.7.0",
     "@parcel/transformer-webmanifest": "^2.7.0",
     "parcel": "^2.7.0",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.7"
+    "tailwindcss": "^3.1.7",
+    "shx": "^0.3.2"
   }
 }
